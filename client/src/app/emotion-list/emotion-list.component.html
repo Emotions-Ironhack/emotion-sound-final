@@ -1,0 +1,19 @@
+<div class="row">
+  <h3 *ngIf="userName"> Feelings Day By Day... <i>{{userName}}</i></h3>
+  <h3 *ngIf="!userName"> Feelings Day By Day </h3>
+
+  <div class="col-md-6 col-md-offset-3">
+    <div *ngFor="let emotion of emotions" class="card" >
+      <img src="{{ emotion.image_path }}" alt="{{ emotion.image_path }}" style="height: 175px;">
+      <br>
+      <div class="card-block">
+        <small class="card-text">Sense at: {{ emotion.created_at | date: 'dd/MM/yyyy hh:mm' }}</small>
+        <h4 class="card-title">It seems that you feel...</h4>
+        <p class="card-text">{{ emotion.maxEmotion.name }}</p>
+        <a class="btn btn-primary" [routerLink]="['/emotion', emotion._id]">Do Recommendation</a>
+        <br>
+      </div>
+      <br>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,73 @@
+.row{
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+}
+
+.row .media-body{
+  text-align: right;
+}
+
+.row .media-body a{
+  text-decoration: none;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #dedede;
+    margin: 20px;
+}
+.card-style {
+    display: block;
+    background-color: #fff;
+    height: 100px;
+    width: 350px;
+    margin: 20px 0px;
+    margin-left: 15%;
+    margin-right: 15%;
+    box-shadow: 1px 1px 8px #999;
+    cursor: pointer;
+}
+.preview {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.recomm-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.card-img {
+    height: 100px;
+    width: 100px;
+}
+.media {
+
+}
+.media-heading {
+
+    color: #444;
+}
+.media-heading:hover, a:link {
+    color: #00C853;
+    text-decoration: none;
+}
+.members {
+    margin-top: 20px;
+    color: #999;
+    float: left;
+ }
+ .btn-part {
+     display: inline-block;
+     margin: 10px;
+     float: right;
+ }
+ .badge {
+     display: inline-block;
+     background: #00C853;
+     float: right;
+     padding: 7px;
+     border-radius: 50px;
+     margin: 10px;
+ }
